@@ -1,0 +1,81 @@
+.login {
+    position: relative;
+    .container {
+        position: absolute;
+        left: 100px;
+        top: 30px;
+        .login-picture {
+            float: right;
+            width: 650px;
+            height: 400px;
+            background-position: right 20px;
+            background: url("../../../public/assets/image/background.jpg");
+            background-size: cover;
+            vertical-align: top;
+            margin-right: 80px;
+        }
+        .loginForm {
+            float: right;
+            border: 1px solid #a0b1c4;
+            border-radius: 3px;
+            width: 334px;
+            height: 400px;
+            right: 0px;
+            .head {
+                text-align: center;
+                border-bottom: 1px solid #a0b1c4;
+                background-color: #f9fbfe;
+                border-radius: 6px 6px 0 0;
+
+                span {
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: #999;
+                    height: 50px;
+                }
+
+            }
+
+            .username, .password {
+                font-size: 16px;
+                padding: 0 16px 0 16px;
+                margin-top: 16px;
+            }
+
+            input {
+                top: 0px;
+                left: 0px;
+                border-radius: 3px;
+                width: 100%;
+                height: 35px;
+            }
+            .foot {
+                padding: 16px 16px 0 16px;
+                .submit {
+                    //margin-top: 23px;
+                    cursor: pointer;
+                    right: 0;
+                    background-color: #5a98de;
+                    outline: none;
+                    border-radius: 3px;
+                    text-align: center;
+                    height: 32px;
+                    span {
+                        color: #fff;
+                        line-height: 32px;
+                    }
+                }
+                .forget {
+                    color: #5a98de;
+                    text-align: right;
+                    margin-top: 16px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+}
+
