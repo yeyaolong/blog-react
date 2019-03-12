@@ -1,26 +1,25 @@
+//require('public/assets/css/const.less');
+@base: 16rem;
 .login {
     position: relative;
     .container {
         position: absolute;
-        left: 100px;
-        top: 30px;
+        left: 400/@base;
+        top: 30/@base;
         .login-picture {
             float: right;
-            width: 650px;
-            height: 400px;
-            //background-position: right 20px;
-            //background: url("../../../public/assets/image/background.jpg");
-            //background-size: cover;
+            width: 650/@base;
+            height: 400/@base;
             vertical-align: top;
-            margin-right: 80px;
+            margin-right: 80/@base;
         }
         .loginForm {
             float: right;
             border: 1px solid #a0b1c4;
             border-radius: 3px;
-            width: 334px;
-            height: 400px;
-            right: 0px;
+            width: 334/@base;
+            height: 400/@base;
+            right: 0;
             .head {
                 text-align: center;
                 border-bottom: 1px solid #a0b1c4;
@@ -29,29 +28,29 @@
 
                 span {
                     width: 100%;
-                    font-size: 16px;
-                    line-height: 50px;
+                    font-size: 16/@base;
+                    line-height: 50/@base;
                     color: #999;
-                    height: 50px;
+                    height: 50/@base;
                 }
 
             }
 
             .username, .password {
-                font-size: 16px;
-                padding: 0 16px 0 16px;
-                margin-top: 16px;
+                font-size: 16/@base;
+                padding: 0 16/@base 0 16/@base;
+                margin-top: 16/@base;
             }
 
             input {
-                top: 0px;
-                left: 0px;
+                top: 0;
+                left: 0;
                 border-radius: 3px;
                 width: 100%;
-                height: 35px;
+                height: 35/@base;
             }
             .foot {
-                padding: 16px 16px 0 16px;
+                padding: 16/@base 16/@base 0 16/@base;
                 .submit {
                     //margin-top: 23px;
                     cursor: pointer;
@@ -60,16 +59,16 @@
                     outline: none;
                     border-radius: 3px;
                     text-align: center;
-                    height: 32px;
+                    height: 32/@base;
                     span {
                         color: #fff;
-                        line-height: 32px;
+                        line-height: 32/@base;
                     }
                 }
                 .forget {
                     color: #5a98de;
                     text-align: right;
-                    margin-top: 16px;
+                    margin-top: 16/@base;
                     cursor: pointer;
                 }
             }
