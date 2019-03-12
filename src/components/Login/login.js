@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LoginForm from './loginForm'
+import Background from '../../../public/assets/image/background.jpg';
 require('./login.less');
 
 class Login extends Component {
@@ -13,10 +14,11 @@ class Login extends Component {
             <div className="login">
                 <div className="container">
                     <LoginForm />
-                    <div className="login-picture"></div>
+                    <div className="login-picture">
+                        <img src={Background} />
+                    </div>
                 </div>
             </div>
-
         )
     }
 }
