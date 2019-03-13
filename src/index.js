@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Init from '../public/assets/js/init';
-import './components/Login/login';
+import  '../public/assets/js/init';
+import Login from './components/Login/login';
 import Header from './components/common/header';
 import Footer from './components/common/footer';
 require('normalize.css');
