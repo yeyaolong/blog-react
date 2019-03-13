@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Init from './components/common/init';
+import Init from '../public/assets/js/init';
 import './components/Login/login';
 import Header from './components/common/header';
 import Footer from './components/common/footer';
