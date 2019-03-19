@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import $http from '../../../api/http';
-import urlList from "../../../api/urlList";
+import $http from '../../api/http';
+import urlList from "../../api/urlList";
 require('./login.less');
 
 class LoginForm extends Component {
@@ -33,7 +33,7 @@ class LoginForm extends Component {
                 password: password
             }
             $http.post(urlList.Login, params).then((res) => {
-                console.log(res);
+                console.log('login.vue res', res);
             });
         } else {
             console.error("请将内容填写完整");
