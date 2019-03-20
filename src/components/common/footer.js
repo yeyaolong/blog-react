@@ -11,7 +11,7 @@ class Footer extends Component {
                 {'name': 'Github', 'url': 'https://github.com/'},
                 {'name': 'Node.js', 'url': 'https://nodejs.org/en/'},
                 {'name': 'React', 'url': 'https://react.docschina.org/'},
-                {'name': 'Vue', 'url': 'https://cn.vuejs.org/v2/guide/index.html'},
+                {'name': 'Vue', 'url': 'https://cn.vuejs.org/v2/guide/login.html'},
                 {'name': '开发指南', 'url': 'https://www.yuque.com/fe9/basic/iwtzab'}
             ]
         }

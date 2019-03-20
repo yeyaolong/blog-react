@@ -4,7 +4,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: {
-		app: './src/index.js',
+		login: './src/entry/entryLogin.js',
+		error404: './src/entry/entry404.js'
 	},
 	
 	output: {
@@ -45,9 +46,14 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			filename: 'public/view/index.html',
-			template: 'public/view/index.html',
-			chunks: ['app']
+			filename: 'public/view/login.html',
+			template: 'public/view/login.html',
+			chunks: ['login']
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'public/view/404.html',
+			template: 'public/view/404.html',
+			chunks: ['error404']
 		})
 	],
 	

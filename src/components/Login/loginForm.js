@@ -33,7 +33,9 @@ class LoginForm extends Component {
                 password: password
             }
             $http.post(urlList.Login, params).then((res) => {
-                console.log('login.vue res', res);
+                if (res.data.code === 200) {
+                    window.location.href= res.data.redirect;
+                }
             });
         } else {
             console.error("请将内容填写完整");
