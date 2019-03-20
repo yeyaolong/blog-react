@@ -1,5 +1,6 @@
 import Mock from 'mockjs';
-import $ajaxLogin from '../api/login'
+// import $ajaxLogin from '../api/login'
+import Api from '../api/api'
 export default {
     startMock () {
         Mock.setup({
@@ -7,12 +8,6 @@ export default {
         });
 
         // 模拟请求数据
-        Mock.mock(/\/blog\/login/, 'post', function (options) {
-            console.log('mock /\\/blog\\/login/', options);
-            return {
-                code: 200,
-                msg: '登录成功'
-            }
-        })
+        Mock.mock(/\/blog\/login/, 'post', Api.login)
     }
 }
