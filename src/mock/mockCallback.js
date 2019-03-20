@@ -1,4 +1,4 @@
-const Api = {
+const MockCallback = {
     login: function (options) {
         console.log('mock /\\/blog\\/login/', options);
         return {
@@ -8,4 +8,4 @@ const Api = {
     }
 }
 
-export default Api
+export default MockCallback
