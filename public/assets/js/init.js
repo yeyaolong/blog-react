@@ -11,7 +11,7 @@
             clientWidth = 920;
         }
 
-        docEl.style.fontSize = 16 * (clientWidth / 1374) + 'px';
+        docEl.style.fontSize = 30 * (clientWidth / 1374) + 'px';
         if (window.orientation === 90) {
 
         } else {

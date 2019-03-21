@@ -10,7 +10,7 @@ class Error404 extends Component {
         super(props);
         this.state = {
             title: 'Oh no!!',
-            subtitle: '页面未找到，要么请求一个不再这里的页面！！'
+            subtitle: '页面未找到'
         }
     }
 
@@ -31,7 +31,7 @@ class Error404 extends Component {
                     <a className="btn-back" href="#" onClick={this.goBack}>返回上一页</a>
                 </div>
                 <img className="astronaut" src={astronaut} />
-                <img className="spaceshipt" src={spaceship} />
+                <img className="spaceship" src={spaceship} />
             </div>
         )
     }
