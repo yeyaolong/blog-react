@@ -35,7 +35,11 @@ class LoginForm extends Component {
             $http.post(urlList.Login, params).then((res) => {
                 if (res.data.code === 200) {
                     window.location.href= res.data.redirect;
+                } else {
+                    alert(res.data.msg);
                 }
+            }).catch((res) => {
+                alert(res.data.msg);
             });
         } else {
             console.error("请将内容填写完整");
