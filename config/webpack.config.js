@@ -5,15 +5,20 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = (env) => {
 	let devtool;
+	let publicPath = ''
+	console.log('__dirname', __dirname)
 	if (env.test) {
 		// 测试环境
 		devtool = 'hidden-source-map'
+        publicPath = '../blog-react-test'
 	} else if (env.dev){
 		// 开发环境
-		devtool = 'inline-source-map'
+		devtool = 'cheap-module-eval-source-map'
+        publicPath = ''
 	} else {
 		// 正式环境
-		devtool = undefined
+		devtool = '#source-map'
+        publicPath = '../blog-react-prod'
 	}
 	return {
 		entry: {
@@ -23,13 +28,15 @@ module.exports = (env) => {
 
 		output: {
 			filename: '[name].bundle.js',
-			path: path.resolve(__dirname, '../dist')
+			path: path.resolve(__dirname, '../dist'),
+			publicPath: publicPath
 		},
 		devServer: {
 			open: false,
 			contentBase: path.resolve(__dirname, '../dist'),
 			port: 8080,
-			hot: true
+			hot: true,
+            publicPath: ''
 		},
 		devtool: devtool,
 		module: {
